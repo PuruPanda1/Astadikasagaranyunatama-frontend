@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+
+body,
+html {
+  width: 100%;
+  margin: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+#root{
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;   
+  width: 100vw;;         /* Make sure the container takes full height */
+  margin: 0;                /* Remove default margin */
+}
+
+html,
+body {
+  height: 100%;
+}
