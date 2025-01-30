@@ -3,9 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MapView from './components/MapView'
+import PointForm from './components/PointForm'
 
 function App() {
 
+  // todo get this points list using Django API
   const points = [
     { lat: 5.926, lng: 80.108, name: '1', info: 'Start point' },
     { lat: 5.934993, lng: 80.108, name: '2', info: 'Start point' },
@@ -29,10 +31,12 @@ function App() {
     { lat: 6.096867, lng: 80.108, name: '20', info: 'End point' }
   ];
 
-
+  // todo create a form to take start and end point from the user and send to django for procecssing
+  // todo on form submit, the start and end points are sent and points list are received as response
   return (
     <>
-      <MapView points={points} />
+    <PointForm />
+      {/* <MapView points={points} /> */}
     </>
   )
 }
