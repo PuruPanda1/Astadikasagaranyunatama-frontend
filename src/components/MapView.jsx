@@ -48,8 +48,6 @@ const MapView = () => {
 
   }, []);
 
-  if (isLoading) return <BlockLoader />;
-
   useEffect(() => {
     console.log(points.length === 0, isLoading);
     if (points.length === 0 || isLoading) return;
@@ -61,7 +59,7 @@ const MapView = () => {
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/satellite-v9',
       center: [points[0].longitude, points[0].latitude],
-      zoom: 8
+      zoom: 12
     });
 
 
