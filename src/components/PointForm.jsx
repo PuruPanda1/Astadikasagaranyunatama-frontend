@@ -27,7 +27,7 @@ const PointForm = () => {
 
 
     return (
-        <div className="min-h-screen bg-[#222] flex flex-col items-center justify-center p-5">
+        <div className="min-h-screen bg-black flex flex-col items-center justify-center p-5">
           
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-blue-700">Astadikasagaranyunatama</h1>
