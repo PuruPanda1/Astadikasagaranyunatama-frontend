@@ -21,7 +21,8 @@ const MapView = () => {
     const getMinPath = async () => {
       try {
         const response = await axios.post('http://127.0.0.1:8000/api/get-points/', {
-          points: state
+          points: state.points,
+          weights: state.weights
         }, {
           headers: {
             'Content-Type': 'application/json'
